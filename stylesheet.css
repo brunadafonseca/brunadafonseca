@@ -1,6 +1,5 @@
 body {
   font-family: 'Nunito', sans-serif;
-  text-align: center;
 }
 
 h1 {
@@ -24,6 +23,10 @@ p {
   font: 18px 'Kreon', serif;
 }
 
+#my-menu li:hover a {
+  background-color: rgba(72, 64, 96, 0.7);
+  color: #fff;
+}
 
 /* misc */
 
@@ -34,11 +37,12 @@ p {
     padding-bottom: 20px;
   }
 
+.center {
+  text-align: center;
+}
 .shadow {
     text-shadow: 1px 1px 3px #000;
   }
-
-
 
 #sec-1 {
   background: #28232b url('https://lh3.googleusercontent.com/-yEox8yiAv_g/Vixm1e8Xq8I/AAAAAAAA3qo/xFyQfFEtJJQ/s800-Ic42/IMG_20140913_170sc638a.jpg') 
@@ -69,7 +73,7 @@ p {
   }
 
 #sec-2 {
-  background: #b5cfb0 url('https://lh3.googleusercontent.com/-_W0pduoCR9I/VissfCIwdLI/AAAAAAAA3e8/cH0hAB-ZdB0/s800-Ic42/ask%2525C3%2525A7.jpg') 
+  background: #b5cfb0 url('http://bit.ly/1M0pQth')
   repeat center center;
   padding: 10%;
 }
@@ -78,17 +82,18 @@ p {
     background: rgba(255, 255, 255, 0.5);
     border: 1px solid #fff; 
     border-radius: 3px;
-    padding: 15% 10%;
+    padding: 10%;
   }
 
   .img-responsive {
     border: 5px solid #fff;
     margin: 0 auto;
-    max-width: 250px;
+    max-width: 250px; 
   }
 
   .txt-black {
-    color: #000000;
+    color: #000;
+    margin-top: 5%;
   }
 
   .txt-justify {
@@ -217,9 +222,23 @@ footer {
     color: rgba(255, 255, 255, 0.4);
   }
 
-  .small-txt {
+  .txt-small {
     color: rgba(255, 255, 255, 0.7);
     font-family: 'Nunito';
     font-size: 11px;
     font-weight: 200;
   }
+
+@media (max-width: 767px) {
+  .img-responsive {
+    width: 90%;
+  }
+  
+  .teste {
+    display: none;
+  }
+  
+  h2 {
+    font-size: 20px;
+  }
+}
