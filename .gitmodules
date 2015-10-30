@@ -1,0 +1,3 @@
+[submodule "gameofquotes"]
+	path = gameofquotes
+	url = ../gameofquotes
